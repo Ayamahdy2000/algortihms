@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header.header-img div {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  transition: linear 2s;
+}
+header.header-img div h1 {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  font-size: 80px;
+  font-weight: normal;
+}
+header.header-img div p {
+  position: absolute;
+  left: 47%;
+  top: 59%;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+header.header-img div nav .navbar {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 38px;
+  padding-left: 650px;
+}
+header.header-img div nav .navbar ul {
+  list-style: none;
+}
+header.header-img div nav .navbar ul li {
+  padding-top: 2%;
+  height: 38px;
+  float: left;
+}
+header.header-img div nav .navbar ul li#first_child {
+  width: 100px;
+}
+header.header-img div nav .navbar ul li#second_child {
+  width: 200px;
+}
+header.header-img div nav .navbar ul li#third_child {
+  width: 150px;
+  position: relative;
+}
+header.header-img div nav .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+header.header-img div nav .navbar ul li ul li {
+  display: none;
+  width: 100%;
+}
+header.header-img div nav .navbar ul li ul li a {
+  color: #009988;
+  text-align: center;
+}
+header.header-img div nav .navbar ul :hover ul li {
+  display: flex;
+}
+header.header-img div nav .navbar ul a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  opacity: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header.header-img div nav .navbar ul a:hover {
+  color: #00c6d7;
+}
+
+section.about {
+  margin: 5%;
+}
+section.about h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3%;
+  text-transform: capitalize;
+}
+section.about .Definition {
+  display: flex;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+  padding: 3%;
+}
+section.about .Definition .deftext h4 {
+  text-transform: capitalize;
+}
+section.about .Definition .deftext p {
+  font-size: 18px;
+}
+section.about .Definition .defimg {
+  margin-left: 18%;
+  margin-bottom: 5%;
+}
+section.about .reason {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+  margin-top: 5%;
+  padding: 3%;
+}
+section.about .reason h4 {
+  text-transform: capitalize;
+}
+
+section.sort {
+  margin: 5%;
+}
+section.sort .text-color {
+  color: #00c6d7;
+}
+section.sort h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+section.sort .sort-div {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  height: 550px;
+}
+section.sort .sort-div .Search {
+  margin-left: 26%;
+}
+section.sort .sort-div .Search h4 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+section.sort .sort-div .Search .bg-blue {
+  margin-top: 15%;
+}
+section.sort .sort-div .Search .bg-persian {
+  margin-top: 15%;
+}
+section.sort .sort-div .selection.preorder hr {
+  width: 42%;
+  margin: 2% 0 3% 29%;
+}
+section.sort .sort-div .selection h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+section.sort .sort-div .selection .bg-blue {
+  background-color: #00c6d7;
+  margin-top: 30%;
+}
+section.sort .sort-div .selection .bg-persian {
+  background-color: #009988;
+  margin-top: 30%;
+}
+section.sort .sort-div .bubble.preorder hr {
+  width: 42%;
+  margin: 2% 0 3% 29%;
+}
+section.sort .sort-div .bubble h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+section.sort .sort-div .bubble .bg-blue {
+  background-color: #00c6d7;
+  margin-top: 40%;
+}
+section.sort .sort-div .bubble .bg-persian {
+  background-color: #009988;
+  margin-top: 40%;
+}
+section.sort .sort-div .bubble .buttoncolor {
+  margin-top: 35%;
+}
+section.sort .sort-div .insertion.preorder hr {
+  width: 42%;
+  margin: 2% 0 3% 29%;
+}
+section.sort .sort-div .insertion h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+section.sort .sort-div .insertion .bg-blue {
+  margin-top: 24%;
+}
+section.sort .sort-div .insertion .bg-persian {
+  margin-top: 24%;
+}
+section.sort .sort-div .insertion .buttonbg {
+  margin-top: 30%;
+}
+section.sort .sort-div .merge {
+  margin-left: 16%;
+  font-size: 14px;
+}
+section.sort .sort-div .merge h4 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+section.sort .sort-div .merge .bg-blue {
+  margin-top: 15%;
+}
+section.sort .sort-div .merge .bg-persian {
+  margin-top: 15%;
+}
+section.sort .sort-div .quick {
+  font-size: 14px;
+}
+section.sort .sort-div .quick h4 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+section.sort .sort-div .quick .bg-blue {
+  margin-top: 15%;
+}
+section.sort .sort-div .quick .bg-persian {
+  margin-top: 15%;
+}
+section.sort .sort-div .Search {
+  margin-left: 34%;
+}
+section.sort .sort-div .Search.seq hr {
+  width: 42%;
+  margin: 2% 0 3% 29%;
+}
+section.sort .sort-div .Search h4 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+section.sort .sort-div .Search .bg-blue {
+  margin-top: 15%;
+}
+section.sort .sort-div .Search .bg-persian {
+  margin-top: 15%;
+}
+
+section.steps {
+  margin: 5%;
+}
+section.steps h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+section.steps .dis {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+section.steps .dis .define {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .define h4 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.steps .dis .define p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .define:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+section.steps .dis .analysis {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .analysis h4 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.steps .dis .analysis p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .analysis:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+section.steps .dis .design {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .design h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+section.steps .dis .design p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .design:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+
+.full-screen {
+  position: absolute;
+  top: 290%;
+  display: none;
+  width: 100%;
+  height: 110vh;
+  background-color: rgba(204, 214, 204, 0.5);
+}
+.full-screen.form {
+  position: absolute;
+  top: -20%;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.full-screen.full {
+  position: absolute;
+  top: 390%;
+}
+.full-screen.sequential {
+  position: absolute;
+  top: 490%;
+}
+.full-screen .exit {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  color: #fff;
+}
+.full-screen .size {
+  font-size: 15px;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  height: 650px;
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  padding: 3% 5%;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+.full-screen .size h3 {
+  transition: 1s ease-in-out;
+  animation: mymove 1s;
+  position: relative;
+  left: 40%;
+  bottom: 1%;
+}
+.full-screen .half {
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  padding: 3% 5%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+.full-screen .half form fieldset {
+  border-color: #fff;
+  height: 450px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+.full-screen .half form fieldset legend {
+  color: #00c6d7;
+  font-size: 25px;
+  text-align: center;
+}
+.full-screen .half form fieldset .radio {
+  padding-right: 42px;
+}
+.full-screen .half form fieldset .radio input {
+  width: 7%;
+}
+.full-screen .half form fieldset select {
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #00c6d7;
+  border: 1px solid #00c6d7;
+  margin-top: 3%;
+  display: block;
+}
+.full-screen .half form fieldset button {
+  margin: 6% 0 0 35%;
+}
+.full-screen .half.search_box {
+  height: 550px;
+}
+.full-screen .half h3 {
+  transition: 1s ease-in-out;
+  animation: mymove 1s;
+  position: relative;
+  left: 35%;
+  bottom: 1%;
+}
+@keyframes mymove {
+  from {
+    left: 0;
+  }
+  to {
+    left: 35%;
+  }
+}
+.full-screen .half input {
+  margin: 2% 0;
+}
+.full-screen .half .bg-persian {
+  width: 20%;
+  height: 40px;
+  margin: 2% 5%;
+}
+.full-screen .half .button_style {
+  margin-top: 2%;
+}
+.full-screen .half .button_style h5 {
+  margin: 0 0 2% 40%;
+  font-size: 15px;
+}
+.full-screen .half .button_style .bg-blue {
+  margin: 3% 0;
+}
+.full-screen .half .img-style {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.form-sty {
+  display: block;
+}
+/* team work */
+.team-work {
+  margin: 5%;
+}
+.team-work h3 {
+  text-align: center;
+}
+.team-work .team {
+  width: 90%;
+  margin: 5%;
+  height: 400px;
+  display: flex;
+}
+.team-work .team .pic1 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/chanyeol.jpg");
+  background-size: cover;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.team-work .team .pic1 .des-pic1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic1 .des-pic1 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic1 .des-pic1 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic1 .des-pic1 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic1:hover .des-pic1 {
+  display: flex;
+}
+.team-work .team .pic2 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/yoona.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic2 .des-pic2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic2 .des-pic2 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic2 .des-pic2 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic2 .des-pic2 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic2:hover .des-pic2 {
+  display: flex;
+}
+.team-work .team .pic3 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/seh.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic3 .des-pic3 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic3 .des-pic3 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic3 .des-pic3 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic3 .des-pic3 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic3:hover .des-pic3 {
+  display: flex;
+}
+.team-work .team .pic4 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/iu.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic4 .des-pic4 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic4 .des-pic4 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic4 .des-pic4 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic4 .des-pic4 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic4:hover .des-pic4 {
+  display: flex;
+}
+
+section.sort .sort-div .Search, section.sort .sort-div .selection, section.sort .sort-div .bubble, section.sort .sort-div .insertion, section.sort .sort-div .merge, section.sort .sort-div .quick {
+  width: 32%;
+  height: 550px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+  padding: 15px;
+  margin-right: 2%;
+}
+
+section.about .Definition .deftext h4, section.about .reason h4, section.steps .dis .define h4, section.steps .dis .analysis h4, section.steps .dis .design h4 {
+  color: #009988;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+section.sort .sort-div .Search .bg-persian, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian, section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half form fieldset button, .full-screen .half .button_style .bg-blue, section.sort .sort-div .selection .bg-blue, section.sort .sort-div .selection .bg-persian, section.sort .sort-div .bubble .bg-blue, section.sort .sort-div .bubble .bg-persian {
+  border: 2px solid #cccccc;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-align: center;
+  width: 28%;
+  height: 50px;
+}
+
+section.sort .sort-div .Search .bg-blue, section.sort .sort-div .Search .bg-persian, section.sort .sort-div .selection .bg-blue, section.sort .sort-div .selection .bg-persian, section.sort .sort-div .bubble .bg-blue, section.sort .sort-div .bubble .bg-persian, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-blue, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian, .full-screen .half .button_style .bg-blue {
+  margin-left: 13%;
+}
+
+section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half form fieldset button, .full-screen .half .button_style .bg-blue {
+  background-color: #00c6d7;
+}
+
+section.sort .sort-div .Search .bg-persian, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian {
+  background-color: #009988;
+}
+
+section.sort .sort-div .Search h4 span, section.sort .sort-div .selection h4 span, section.sort .sort-div .bubble h4 span, section.sort .sort-div .insertion h4 span, section.sort .sort-div .merge h4 span, section.sort .sort-div .quick h4 span {
+  color: #00c6d7;
+  font-size: 28px;
+}
+
+section.sort .sort-div .Search h4 hr, section.sort .sort-div .selection h4 hr, section.sort .sort-div .bubble h4 hr, section.sort .sort-div .insertion h4 hr, section.sort .sort-div .merge h4 hr, section.sort .sort-div .quick h4 hr {
+  width: 30%;
+  margin: 2% 0 3% 35%;
+}
+
+.full-screen .half #selection_output, .full-screen .half #bubble_output, .full-screen .half #insertion_output, .full-screen .half #merge_output, .full-screen .half #quick_output, .full-screen .half #search_output {
+  padding: 10px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

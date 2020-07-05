@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Talk about algorithms and write the algorithms">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <title>Algo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <div id="block" class="full-screen form">
+        <span class="exit"><i id="exit-form" class="fas fa-times-circle"></i></span>
+        <div id="text" class="half">
+            <form id="submit" onsubmit="submit_exit()" action="#" method="POST">
+                <fieldset>
+                    <legend>Sign up</legend>
+                    <label class="form-sty" for="yourname"> Enter your name :</label>
+                    <input class="form-sty" type="text" name="name" id="yourname" required="required">
+                    <label class="form-sty" for="email">Enter your e_mail :</label>
+                    <input class="form-sty" type="email" name="email" id="email" required="required">
+                    <label class="form-sty" for="yourpassword">Enter your password :</label>
+                    <input class="form-sty" type="password" name="password" id="yourpassword" required="required">
+
+                    <span class="radio">
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+
+                    </span>
+                    <br>
+
+                    <select required="required">
+                        <option value="1"> Your country </option>
+                        <option value="2">Egypt</option>
+                        <option value="3">South Korea</option>
+                        <option value="4">England</option>
+
+                    </select>
+                    <button type="submit">REGESTER</button>
+
+
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
+    <a name="home"></a>
+    <!-- header -->
+    <header id="hidden" class="header-img">
+        <div id="image">
+            <nav>
+                <div id="color" class="navbar">
+                    <ul class="wow bounceInLeft">
+                        <li id="first_child"><a href="#home" id="active">home</a></li>
+                        <li id="second_child"><a href="#about">about_algorithms</a> </li>
+                        <li id="third_child"><a>algorithms</a>
+                            <ul>
+                                <li><a href="#sort">Sort</a></li>
+                                <li><a href="#Search">Search</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>algo
+                <hr>
+            </h1>
+            <p>you can know everything about <br> algorithms in this <br> site</p>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- about -->
+
+    <section class="about wow bounceInUp">
+        <a name="about"></a>
+        <h3>about algorithm</h3>
+        <div class="Definition">
+            <div class="deftext">
+                <h4> definition: </h4>
+                <p>
+                    <pre>
+An <b>Algorithm </b>is a sequence of unambiguous instructions 
+for solving a problem, i.e., for obtaininga required output 
+for any legitimate input in a finite amount of time.      
+                    </pre>
+                    There are 3 main features of algorithm from its definition:
+
+                    <br>
+                    <ol>
+
+                        <li>The essential aim of an algorithm is to get a specific output,</li>
+                        <li>An algorithm involves with several continuous steps,</li>
+                        <li>The output comes after the algorithm finished the whole process.</li>
+                    </ol>
+                    <br>
+                    <pre>
+So basically, all algorithms perform logically while following 
+the steps to get an output for a given input.
+                </pre>
+
+
+                </p>
+            </div>
+            <div class="defimg">
+                <img src="images/about.png" alt="">
+            </div>
+        </div>
+        <div class="reason">
+            <br>
+            <h4>why study algorithms: </h4>
+            <p>
+                <ol>
+                    <li>Theoretical importance
+                        <ul>
+                            <li>The core of computer science</li>
+                        </ul>
+                    </li>
+                    <li> Practical importance <br>
+                        <ul>
+                            <li>A practitioner’s toolkit of known algorithms </li>
+                            <li>Framework for designing and analyzing algorithms for new problems </li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+        </div>
+    </section>
+    <section class="steps wow bounceInUp">
+        <h3>Steps of algorithms</h3>
+        <div class="dis">
+            <div class="define">
+                <h4>Obtain a description of the problem</h4>
+                <p>This step is much more difficult than it appears. In the following discussion, the word client refers
+                    to someone who wants to find a solution to a problem, and the word developer refers to someone who
+                    finds a way to solve the problem. The developer must create an algorithm that will solve the
+                    client's problem.
+
+                </p>
+            </div>
+            <div class="analysis">
+                <h4>Analyze the problem.</h4>
+                <p>The purpose of this step is to determine both the starting and ending points for solving the problem.
+                    This process is analogous to a mathematician determining what is given and what must be proven. A
+                    good problem description makes it easier to perform this step.</p>
+            </div>
+            <div class="design">
+                <h4>Desgin</h4>
+                <p>The first stage is to identify the problem and thoroughly understand it. This is where it’s important
+                    you consult with everybody who has an interest in the problem. Speak with them and see how they see
+                    the problem and what they need out of the solution so their part of the project or program can
+                    progress.</p>
+            </div>
+        </div>
+    </section>
+    <!-- sort -->
+    <section class=" sort wow bounceInUp">
+
+        <a name="sort"></a>
+        <h3>Sort</h3>
+
+        <div class="sort-div">
+            <div class="selection ">
+                <h4><span>01:</span> <br>
+                    selection sort
+                    <hr>
+
+                </h4>
+                <p>
+                    //Input : An array A[0...n-1] of orderable elements
+                    //Output:Array A[0...n-1] sorted in decreasing order
+                    <br> <br><br><br>
+                    <span class="algo">
+                        <pre>
+                            for i <i class="fas fa-arrow-left"></i> 0 to n-2 do
+                               min <i class="fas fa-arrow-left"></i> i
+                               for j <i class="fas fa-arrow-left"></i> i+1 to n-1 do
+                                 if A[j] < A[min]
+                                   min <i class="fas fa-arrow-left"></i> j
+                               swap A[i] and A[min]    
+                           </pre>
+                    </span>
+                </p>
+
+                <button id="selection_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="selection_des" class="bg-persian">
+                    description
+                </button>
+            </div>
+            <div class="bubble">
+                <h4><span>02:</span> <br>
+                    bubble sort
+                    <hr>
+
+                </h4>
+                <p>
+                    //Input : An array A[0...n-1] of orderable elements
+                    //Output:Array A[0...n-1] sorted in decreasing order
+                    <br><br><br><br>
+                    <span class="algo">
+                        <pre>
+                                for i <i class="fas fa-arrow-left"></i> 0 to n-2 do
+                                   for j <i class="fas fa-arrow-left"></i> 0 to n-2-i
+                                     if A[j+1] < A[j]      
+                                   swap A[j] and A[j+1]    
+                               </pre>
+                    </span>
+                </p>
+
+                <button id="bubble_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="bubble_des" class="bg-persian">
+                    description
+                </button>
+
+            </div>
+            <div class="insertion">
+                <h4><span>03:</span> <br>
+                    insertion sort
+                    <hr>
+
+                </h4>
+                <p>
+                    //Input : An array A[0...n-1] of orderable elements
+                    //Output:Array A[0...n-1] sorted in decreasing order
+                    <br> <br><br><br>
+                    <span class="algo">
+                        <pre>
+                                for i <i class="fas fa-arrow-left"></i> 0 to n-1 do
+                                   u <i class="fas fa-arrow-left"></i> A[i]
+                                    j <i class="fas fa-arrow-left"></i> i-1 
+                                    while j => 0 and A[j] > u 
+                                      A[j+1]=A[j]
+                                      j <i class="fas fa-arrow-left"></i> j - 1
+                                    A[j+1] <i class="fas fa-arrow-left"></i> u 
+                               </pre>
+                    </span>
+                </p>
+
+                <button id="insertion_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="insertion_des" class=" bg-persian">
+                    description
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="sort divide wow bounceInUp">
+        <div class="sort-div">
+            <div class="merge">
+                <h4><span>04:</span> <br>
+                    merge sort
+                    <hr>
+
+                </h4>
+                <div class="text-size">
+                    <p>
+
+                        // Input: An array A[0..n-1] of orderable elements <br>
+                        // Output: Array A[0..n-1] sorted in nondecreasing order
+                        <br>
+                        <span>
+                            <pre>if n > 1
+    copy A[0..(n/2)-1] to B[0..(n/2)-1]
+    copy A[(n/2)..n-1] to C[0..(n/2)-1]
+    MergeSort(B[0..(n/2)-1])
+    MergeSort(C[0..(n/2)-1])
+    Merge(B,C,A)</pre></span>
+                        // Input: Arrays B[0..p-1] and C[0..q-1] both sorted <br>
+                        // Output: Sorted array A[0..p+q-1] of elements of B & C
+
+                        <span>
+                            <pre>i=0 ; j=0 ; k=0
+            While i < p and j < q do
+                if B[i] <= C[j]
+                    A[k] = B[i];  i=i+1
+                else A[k] = C[j];  j=j+1
+                k=k+1
+                if i = p
+                copy C[j..q-1] to A[k..p+q-1]
+                else 
+                copy B[i..p-1] to A[k..p+q-1] </pre>
+                        </span>
+                    </p>
+                </div>
+
+
+                <button id="merge_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="merge_des" class="bg-persian">
+                    description
+                </button>
+            </div>
+            <div class="quick">
+                <h4><span>05:</span> <br>
+                    quick sort
+                    <hr>
+
+                </h4>
+                <div class="text-size">
+                    <p>
+
+
+                        //Input: Subarray of arr A[0..n-1], defined by its left & right <br>
+                        // indices l and r <br>
+                        //Output: Subarray A[l..r] sorted in nondecreasing order
+                        <br>
+                        <span>
+                            <pre>if l < r
+    s = Partition (A[l..r]) // s is a split position
+    QuickSort(A[l..s-1])
+    QuickSort(A[s+1..r])</pre></span>
+                        //Input: Subarray of arr A[0.n-1], defined by its left & right <br>
+                        //Output: Partition of A[l..r], with the split position returned as
+
+
+                        <span>
+                            <pre>p=A[i]
+i = l ; j=r+1
+    repeat
+    repeat i=i+1 until A[i] >= p
+    repeat j=j-1 until A[j] <= p
+    swap (A[i],A[j])
+    until i >= j
+    swap (A[i],A[j])  // undo last swap when i>=j
+    swap (A[i],A[j])
+    return j </pre>
+                        </span>
+                    </p>
+                </div>
+
+
+                <button id="quick_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="quick_des" class="bg-persian">
+                    description
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- selection_model -->
+    <div id="selection" class="full-screen  ">
+        <span class="exit"><i id="exit_selection" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Selection sort</h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="size" id="size_selection">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="text" name="array" id="array_selection">
+            <button id="selection_result" class="bg-persian">Run</button>
+            <div id="selection_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="selection_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="selection_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="selection_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- java script -->
+    <div id="javascript_selection_model" class="full-screen  ">
+        <span class="exit"><i id="javascript_selection_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Javascript</h3>
+            <pre>
+                        function selection() {
+                         var n = document.getElementById("size").value;
+                         var string = document.getElementById("array").value;
+                         var arr = string.split(',');
+                            for (var i = 0; i < n - 1; i++)
+                                {
+                                    var min=i; 
+                                    for (var j=i + 1; j < n; j++)
+                                       {
+                                        if (arr[j] < arr[min]) {
+                                            min=j;
+                                                 } 
+                                                } 
+                                                //swap the arr[i] with smallest element
+                                    var temp; 
+                                    temp=arr[i]; 
+                                    arr[i]=arr[min]; 
+                                    arr[min]=temp; 
+                                }
+                                   console.log("your array after sort:" + arr); 
+                                }
+                    </pre>
+            </n>
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_selection_model" class="full-screen  ">
+        <span class="exit"><i id="java_selection_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre>package web;
+                               import java.util.Scanner;
+                               public class Web {
+                                   public static void selection(int arr[], int n) {
+                                       for (int i = 0; i < n - 1; i++) {
+                                           int min = i;
+                                           //searching for smallest element in ever iteration in list
+                                           for (int j = i + 1; j < n; j++) {
+                                               if (arr[j] < arr[min]) { min = j;}}
+                                           int temp; //swap the arr[i] with smallest element
+                                           temp = arr[i];
+                                           arr[i] = arr[min];
+                                           arr[min] = temp;}}
+                                   public static void main(String[] args) {
+                                       Scanner input = new Scanner(System.in);
+                                       System.out.print("size of list = ");
+                                       int n = input.nextInt();
+                                       int Array[] = new int[20];
+                                       for (int i = 0; i < n; i++) {
+                                           int value;
+                                           System.out.print("enter the " + (i + 1) + " element: ");
+                                           value = input.nextInt();
+                                           Array[i] = value;}
+                                       selection(Array, n);
+                                       System.out.print("sorted list ={");
+                                       for (int i = 0; i < n; i++) {
+                                           if (i < n-1) {System.out.print(Array[i] + " , ");
+                                           } else {System.out.print(Array[i]);}}
+                                       System.out.println("}");
+                                   }
+                               }
+                         </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_selection_model" class="full-screen  ">
+        <span class="exit"><i id="c_selection_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>c++</h3>
+            <pre> #include &lt;bits/stdc++.h&gt; 
+                                using namespace std;
+                                void selection(int arr[],int n)
+                                {
+                                    for(int i=0; i< n-1; i++)
+                                    {
+                                        int min=i;
+                                        for(int j=i+1; j< n; j++)
+                                        {
+                                            if(arr[j]< arr[min]){min=j;}}
+                                        int temp;  //swap the arr[i] with smallest element
+                                        temp=arr[i];
+                                        arr[i]=arr[min];
+                                        arr[min]=temp; }
+                                }
+                                int main()
+                                {
+                                    int n;
+                                    cout <<"size of list = ";
+                                    cin>>n;
+                                    int arr[n];
+                                    for(int i=0; i< n; i++)
+                                    {
+                                        cout<<"enter the "<< i+1<<" element: ";
+                                        cin>>arr[i]; }
+                                    selection(arr,n);
+                                    cout<<"sorted list =";
+                                    for(int i=0; i< n; i++)
+                                    {i< n-1?cout<< arr[i]<< " , ":cout<< arr[i]; }
+                                    return 0;
+                                }
+                
+                                </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="selection_description" class="full-screen ">
+        <span class="exit"><i id="selection_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Selection description</h3>
+            <br>
+            <p>Example: 7 5 4 2</p>
+            <img class="img-style" src="images/selection.png" alt="selection-des">
+        </div>
+    </div>
+    <!-- bubble_model -->
+    <div id="bubble" class="full-screen  ">
+
+        <span class="exit"><i id="exit_bubble" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Bubble sort</h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="size" id="size_bubble">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="bubble_text" name="array" id="array_bubble">
+            <button id="bubble_result" class="bg-persian">Run</button>
+            <div id="bubble_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="bubble_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="bubble_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="bubble_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <div id="js_bubble_model" class="full-screen  ">
+        <span class="exit"><i id="js_bubble_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Javascript</h3>
+            <pre>function bubbleSort(arr,n)
+                                {
+                                    for(var i=0; i< n-1; i++)
+                                    {
+                                        //Compare adjacent elements
+                                        //exchange them if out of order
+                                        for(var j=0; j< n-1-i; j++)
+                                        {
+                                
+                                            if(arr[j+1]< arr[j])
+                                            {
+                                                var temp=arr[j];
+                                                arr[j]=arr[j+1];
+                                                arr[j+1]=temp;
+                                            }
+                                        }
+                                
+                                    }
+                                }
+                                var arr=[2,5,1,4,3];
+                                bubbleSort(arr,5);
+                                for(var x=0;x< 5;x++){
+                                    console.log(arr[x]);
+                                }
+                        </pre>
+            </n>
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_bubble_model" class="full-screen  ">
+        <span class="exit"><i id="java_bubble_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre>  package web;
+                                   import java.util.Scanner;
+                                   import java.util.Vector;
+                                   import javafx.util.Pair;
+                                   public class Web {
+                                       public static void bubbleSort(int arr[], int n) {
+                                           for (int i = 0; i < n - 1; i++) {
+                                               for (int j = 0; j < n - 1 - i; j++) {
+                                                   if (arr[j + 1] < arr[j]) {
+                                                       int temp = arr[j];
+                                                       arr[j] = arr[j + 1];
+                                                       arr[j + 1] = temp; } }
+                                           }
+                                       }
+                                       public static void main(String[] args) {
+                                           Scanner input = new Scanner(System.in);
+                                           int n;
+                                           System.out.print("size of list = ");
+                                           n = input.nextInt();
+                                           int arr[] = new int[n];
+                                           for (int i = 0; i < n; i++) {
+                                               System.out.print("enter the " + (i + 1) + " element: ");
+                                               int x = input.nextInt();
+                                               arr[i] = x; }
+                                           bubbleSort(arr, n);
+                                           System.out.print("sorted list =");
+                                           for (int i = 0; i < n; i++) {
+                                               if (i < n - 1) {System.out.print(arr[i] + " , ");
+                                               } else { System.out.print(arr[i]);} }
+                                       }
+                                   }
+                             </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_bubble_model" class="full-screen  ">
+        <span class="exit"><i id="c_bubble_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>C++</h3>
+            <pre>      #include &lt;bits/stdc++.h&gt; 
+                                        using namespace std;
+                                        void bubbleSort(int arr[],int n)
+                                        {
+                                            for(int i=0; i< n-1; i++)
+                                            {
+                                                for(int j=0; j< n-1-i; j++)
+                                                {
+                                                  if(arr[j+1]< arr[j]){ swap(arr[j],arr[j+1]);}
+                                                }
+                                        
+                                            }
+                                        }
+                                        int main()
+                                        {
+                                            int n;
+                                            cout <<"size of list = ";
+                                            cin>>n;
+                                            int arr[n];
+                                            for(int i=0; i< n; i++)
+                                            {
+                                                cout<<"enter the "<< i+1<<" element: ";
+                                                cin>>arr[i]; }
+                                            bubbleSort(arr,n);
+                                            cout<<"sorted list =";
+                                            for(int i=0; i< n; i++)
+                                            { i< n-1?cout<< arr[i] <<" , ":cout<< arr[i];}
+                                            return 0;
+                                        }
+                    
+                                    </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="bubble_description" class="full-screen ">
+        <span class="exit"><i id="bubble_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Bubble description</h3>
+            <br>
+            <p>Example: 7 5 4 2</p>
+            <img class="img-style" src="images/bubble.png" alt="bubble-des">
+        </div>
+    </div>
+    <!-- insertion -->
+    <div id="insertion" class="full-screen  ">
+
+        <span class="exit"><i id="exit_insertion" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Insertion sort</h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="size" id="size_insertion">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="insertion_text" name="array" id="array_insertion">
+            <button id="insertion_result" class="bg-persian">Run</button>
+            <div id="insertion_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="insertion_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="insertion_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="insertion_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <div id="js_insertion_model" class="full-screen flip ">
+        <span class="exit"><i id="js_insertion_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Javascript</h3>
+            <pre>function insertionSort(arr,n)
+                {
+                    for(var i=0; i< n; i++)
+                    {
+                        var value=arr[i];
+                        var j=i-1;
+                        while(j>=0&&arr[j]>value)
+                        {
+                            arr[j+1]=arr[j];
+                            j=j-1;
+                        }
+                        arr[j+1]=value;
+                    }
+                }
+                var arr=[2,5,1,8,7,4,3];
+                insertionSort(arr,7);
+                for(var x=0;x< 7;x++){
+                    console.log(arr[x]);
+                }
+                </pre>
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_insertion_model" class="full-screen flip ">
+        <span class="exit"><i id="java_insertion_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre>package web;
+               import java.util.Scanner;
+               public class Web {
+                   public static void insertionSort(int arr[], int n) {
+                       for (int i = 0; i < n; i++) {
+                           int value = arr[i];
+                           int j = i - 1;
+                           while (j >= 0 && arr[j] > value) {
+                               arr[j + 1] = arr[j];
+                               j = j - 1;
+                           }
+                           arr[j + 1] = value; }
+                   }
+                   public static void main(String[] args) {
+                       Scanner input = new Scanner(System.in);
+                       System.out.print("size of list = ");
+                       int n = input.nextInt();
+                       int Array[] = new int[20];
+                       for (int i = 0; i < n; i++) {
+                           int value;
+                           System.out.print("enter the " + (i + 1) + " element: ");
+                           value = input.nextInt();
+                           Array[i] = value; }
+                       insertionSort(Array, n);
+                       System.out.print("sorted list = ");
+                       for (int i = 0; i < n; i++) {
+                           if (i < n - 1) { System.out.print(Array[i] + " , "); 
+                            } else { System.out.print(Array[i]); }
+                       }  
+                   }
+               }
+                 </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_insertion_model" class="full-screen  ">
+        <span class="exit"><i id="c_insertion_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>C++</h3>
+            <pre>#include &lt;bits/stdc++.h&gt;
+                using namespace std;
+                void insertionSort(int arr[],int n)
+                {
+                    for(int i=0; i< n; i++)
+                    {
+                        int value=arr[i];
+                        int j=i-1;
+                        while(j>=0&&arr[j]>value)
+                        {
+                            arr[j+1]=arr[j];
+                            j=j-1;
+                        }
+                        arr[j+1]=value; }
+                }
+                int main()
+                {
+                    int n;
+                    cout <<"size of list = ";
+                    cin>>n;
+                    int arr[n];
+                    for(int i=0; i< n; i++)
+                    {
+                        cout<<"enter the "<< i+1<<" element: ";
+                        cin>>arr[i];  }
+                    insertionSort(arr,n);
+                    cout<<"sorted list =";
+                    for(int i=0; i< n; i++){ i< n-1?cout<< arr[i]<<" , ":cout<< arr[i]; }
+                    return 0;
+                }
+                    </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="insertion_description" class="full-screen ">
+        <span class="exit"><i id="insertion_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Insertion description</h3>
+            <br>
+            <p>Example: 7 5 4 2</p>
+
+            <img class="img-style" src="images/insertion.png" alt="">
+        </div>
+    </div>
+    <!-- merge_model -->
+    <div id="merge" class="full-screen full ">
+        <span class="exit"><i id="exit_merge" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Merge sort</h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="merge_size" id="size_merge">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="text" name="merge_array" id="array_merge">
+            <button id="merge_result" class="bg-persian">Run</button>
+            <div id="merge_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="merge_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="merge_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="merge_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- java script -->
+    <div id="javascript_merge_model" class="full-screen full  ">
+        <span class="exit"><i id="javascript_merge_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Javascript</h3>
+            <pre>
+                function merge(left, right) {
+                    const arr = [];
+                    while (left.length && right.length) {
+                        if (left[0] < right[0]) {
+                            arr.push(left.shift()); 
+                        } else {
+                            arr.push(right.shift());
+                        }
+                    }
+                    return [...arr, ...left, ...right];
+                }
+                function mergeSort(array, half = array.length / 2) {
+                    if (array.length < 2) {
+                        return array 
+                    }
+                    const left = array.splice(0, half); 
+                    return merge(mergeSort(left), mergeSort(array))
+                }
+                var arrSort=[5,2,1,3,7,4,8,6];
+                console.log(mergeSort(arrSort));
+                    </pre>
+            </n>
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_merge_model" class="full-screen full ">
+        <span class="exit"><i id="java_merge_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre>package web;
+               import java.util.Scanner;
+               public class Web {
+               public static void copy_subarr(int source[],int destination[],int size_source,int extra)
+               { for(int i=0; i< size_source; i++) {destination[i]=source[i+extra];} }
+               public static void merge(int arr[], int l, int m, int h) {
+                   int i=0, j=0, k=l;
+                   int size_B = m - l + 1; int size_C =  h - m;
+                   int B[]=new int[size_B]; int C[]=new int[size_C];
+                   copy_subarr(arr,B,size_B,l); copy_subarr(arr,C,size_C,m+1);
+                   while (i< size_B&&j < size_C) {
+                       if (B[i] <= C[j]) { arr[k] = B[i];
+                                           i++;
+                       }else{ arr[k] = C[j];
+                               j++; }  k++; }
+                   for(; i< size_B; i++,k++) { arr[k] = B[i]; } for(; j< size_C; j++,k++){ arr[k] = C[j]; }  }
+               public static void mergeSort(int arr[], int l, int r) {       
+                       if (l < r){
+                       int m = l+(r-l)/2;
+                       mergeSort(arr, l, m); mergeSort(arr, m+1, r);
+                       merge(arr, l, m, r); } }
+                   public static void main(String[] args) {
+                       Scanner input = new Scanner(System.in);  System.out.print("size of list = ");
+                       int n = input.nextInt();  int Array[] = new int[20];
+                       for (int i = 0; i < n; i++) { int value;
+                           System.out.print("enter the " + (i + 1) + " element: ");
+                           value = input.nextInt();  Array[i] = value; }
+                       mergeSort(Array,0,n-1);
+                       System.out.print("sorted list =");
+                       for (int i = 0; i < n; i++) {
+                           if (i < n - 1) { System.out.print(Array[i] + " , ");
+                           } else { System.out.print(Array[i]); } } }
+               }
+                         </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_merge_model" class="full-screen full ">
+        <span class="exit"><i id="c_merge_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>c++</h3>
+            <pre> #include &lt;bits/stdc++.h&gt; 
+                    using namespace std;
+                    void copy_subarr(int source[],int destination[],int size_source,int extra)
+                    {for(int i=0; i< size_source; i++){destination[i]=source[i+extra];} }
+                    void merge(int a[], int l,int mid,int h) {   
+                        int i =0,j=0,k=l;
+                        int p = mid-l+1; int q=h-mid;
+                        int b[p],c[q];
+                        copy_subarr(a,b,p,l); copy_subarr(a,c,q,mid+1);
+                        while (i< p&&j< q){
+                            if (b[i] <= c[j]){a[k] = b[i];
+                                              i++;
+                               }else{ a[k] = c[j];
+                                    j++;  } k++;} 
+                            for(;i< p;i++,k++){a[k]=b[i];} for(;j< q;j++,k++){ a[k]=c[j]; } 
+                    }
+                    void merge_sort(int a[],int l,int h)
+                    { if(l< h)  {
+                            int mid = l+(h-l)/2;
+                            merge_sort(a,l,mid); merge_sort(a,mid+1,h);
+                            merge(a,l,mid,h); }   }
+                    int main()
+                    {   int size;
+                        cout<<"Enter your size :";
+                        cin>>size; int a[size];
+                        cout<<"Enter your numbers\n";
+                        for(int i =0 ; i< size; i++) { cout<<"Number "<< i+1<<" = ";
+                                                       cin>>a[i]; }
+                        merge_sort(a,0,size-1);
+                        for(int i=0;i< size;i++){
+                            cout<< a[i]<<" ";  }
+                        return 0;  }
+                                </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="merge_description" class="full-screen full ">
+        <span class="exit"><i id="merge_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Merge description</h3>
+            <br>
+            <p>Example: 70 50 30 10 20 40 60</p>
+            <img class="img-style" src="images/merge.png" alt="selection-des">
+        </div>
+    </div>
+    <!-- quick_model -->
+    <div id="quick" class="full-screen full "> class="form-sty"
+        <span class="exit"><i id="exit_quick" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Quick sort</h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="size" id="size_quick">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="text" name="array" id="array_quick">
+            <button id="quick_result" class="bg-persian">Run</button>
+            <div id="quick_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="quick_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="quick_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="quick_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- java script -->
+    <div id="javascript_quick_model" class="full-screen full ">
+        <span class="exit"><i id="javascript_quick_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>Javascript</h3>
+            <pre>
+                function swap(items, leftIndex, rightIndex) {
+                var temp = items[leftIndex];
+                items[leftIndex] = items[rightIndex];
+                items[rightIndex] = temp; }
+                function partition(items, left, right) {
+                var pivot = items[Math.floor((right + left) / 2)];
+                var i = left;
+                var j = right;
+                while (i <= j) {
+                    while (items[i] < pivot) { i++;  }
+                    while (items[j] > pivot) { j--; }
+                    if (i <= j) {
+                        swap(items, i, j);
+                        i++;
+                        j--;  }
+                }
+                return i; }
+                function quickSort(items, left, right) {
+                var index;
+                if (items.length > 1) {
+                    index = partition(items, left, right);
+                    if (left < index - 1) {
+                        quickSort(items, left, index - 1);
+                    }
+                    if (index < right) {
+                        quickSort(items, index, right);
+                    }
+                }
+                return items;  }
+                var arrSort = [5, 2, 1, 3, 7, 4, 8, 9, 6];
+                var result = quickSort(arrSort, 0, arrSort.length - 1);
+                console.log(result);
+                    </pre>
+
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_quick_model" class="full-screen full ">
+        <span class="exit"><i id="java_quick_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre>package javaapplication3;
+               import java.util.Scanner;
+               public class JavaApplication3 {
+                   public static int partition(int arr[], int low, int high) {
+                       int pivot = arr[high];
+                       int i = (low - 1);
+                       for (int j = low; j <= high - 1; j++) {
+                           if (arr[j] < pivot) {
+                               i++;
+                               int temp = arr[i];
+                               arr[i] = arr[j];
+                               arr[j] = temp;  } }
+                       int temp = arr[i + 1];
+                       arr[i + 1] = arr[high]; arr[high] = temp;
+                       return (i + 1); }
+                  public static  void quickSort(int arr[], int low, int high) {
+                       if (low < high) {
+                           int pi = partition(arr, low, high);
+                           quickSort(arr, low, pi - 1);  quickSort(arr, pi + 1, high);  } }
+                   public static void main(String[] args) {
+                       Scanner input = new Scanner(System.in);
+                       System.out.print("size of list = ");
+                       int n = input.nextInt();  int Array[] = new int[20];
+                       for (int i = 0; i < n; i++) { int value;
+                           System.out.print("enter the " + (i + 1) + " element: ");
+                           value = input.nextInt(); Array[i] = value;  }
+                       quickSort(Array, 0, n - 1);
+                       System.out.print("sorted list =");
+                       for (int i = 0; i < n; i++) {
+                           if (i < n - 1) {System.out.print(Array[i] + " , ");
+                           } else { System.out.print(Array[i]); }
+                         } }
+                    }
+                         </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_quick_model" class="full-screen full ">
+        <span class="exit"><i id="c_quick_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>c++</h3>
+            <pre> #include &lt;bits/stdc++.h&gt; 
+                using namespace std;
+                int partition (int arr[], int low, int high){  
+                    int pivot=arr[high];  int i=(low-1);
+                    for (int j=low;j<=high-1;j++)
+                    {
+                        if (arr[j]< pivot) {
+                            i++;
+                            swap(arr[i], arr[j]);  }
+                    }
+                    swap(arr[i + 1],arr[high]);
+                    return (i + 1);  }
+                void quickSort(int arr[],int low,int high) {
+                    if (low< high){
+                        int pi = partition(arr, low, high);
+                        quickSort(arr, low, pi - 1);
+                        quickSort(arr, pi + 1, high); }
+                }
+                int main()
+                {
+                    int n;
+                    cout <<"size of list = ";
+                    cin>>n;
+                    int arr[n];
+                    for(int i=0; i< n; i++) {
+                        cout<<"enter the "<< i+1<<" element: ";
+                        cin>>arr[i];  }
+                    quickSort(arr, 0, n - 1);
+                     cout<<"sorted list =";
+                    for(int i=0; i< n; i++) { i< n-1?cout<< arr[i]<<" , ":cout<< arr[i]; }
+                    
+                    return 0;
+                }
+                
+                                </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="quick_description" class=" full-screen full  ">
+        <span class="exit"><i id="quick_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>quick description</h3>
+            <br>
+            <img class="img-style" src="images/quick.png" alt="quick-des">
+        </div>
+    </div>
+    <!-- search -->
+
+    <section class="sort divide  wow bounceInUp ">
+        <a name="Search"></a>
+        <h3>search</h3>
+        <div class="sort-div">
+
+            <div class="Search seq ">
+                <h4><span>01:</span> <br>
+                    sequential search
+                    <hr>
+
+                </h4>
+                <div class="text-size">
+                    <p>
+
+                        //Output: index of the first element in A, whose
+                        //value is equal to K or -1 if no such element is found
+                        <br> <br><br>
+                        <pre>
+                                A[n] <- K
+                                i <- 0
+                                while A[i] ≠ K do
+	                                i <- i+1
+                                if i < n 
+	                                return i
+                                else
+	                                return -1
+
+                            </pre>
+                    </p>
+                </div>
+
+
+                <button id="search_click" class="bg-blue">
+                    run code
+                </button>
+                <button id="search_des" class="bg-persian">
+                    description
+                </button>
+            </div>
+
+
+    </section>
+    <!-- search_model -->
+
+    <div id="search" class="full-screen sequential ">
+        <span class="exit"><i id="exit_search" class="fas fa-times-circle"></i></span>
+        <div class="half search_box">
+            <h3>sequential search </h3>
+            Enter your size :
+            <input class="form-sty" type="text" name="size" id="size_search">
+            Enter your array :*put , affer every number*
+            <input class="form-sty" type="text" name="array" id="array_search">
+            Enter your key :
+            <input class="form-sty" type="text" name="search" id="key_search">
+            <button id="search_result" class="bg-persian">Run</button>
+            <div id="search_output">
+
+            </div>
+
+            <div class="button_style">
+                <h5>view code with</h5>
+                <button id="search_c++" class="bg-blue">
+                    C++
+                </button>
+                <button id="search_java" class="bg-blue">
+                    Java
+                </button>
+                <button id="search_javascript" class="bg-blue">
+                    Javascript
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- java script -->
+    <div id="javascript_search_model" class=" full-screen sequential ">
+        <span class="exit"><i id="javascript_search_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>Javascript</h3>
+            <pre>
+                function search(items, element, size) {
+                    for (var i = 0; i < size; i++) {
+                        if (items[i] == element) {
+                            return (i + 1);
+                        }
+                    }
+                    return -1;
+                }
+                var arr = [5, 4, 2, 3, 1, 6];
+                var index = search(arr, 8, arr.length);
+                if (index == -1) {
+                    console.log("not found");
+                } else {
+                    console.log("your element at index : " + index);
+                }
+                    </pre>
+
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java_search_model" class=" full-screen sequential ">
+        <span class="exit"><i id="java_search_exit" class="fas fa-times-circle"></i></span>
+        <div class=" size">
+            <h3>Java</h3>
+            <pre> package javaapplication3;
+               import java.util.Scanner;
+               public class JavaApplication3 {
+                   public static int search(int arr[], int element, int size) {
+                       for (int i = 0; i < size; i++) {
+                           if (arr[i] == element) {
+                               return (i + 1);  }
+                       }
+                       return -1;  }
+                   public static void main(String[] args) {
+                       Scanner input = new Scanner(System.in);
+                       System.out.print("size of list = ");
+                       int n = input.nextInt(); int Array[] = new int[20];
+                       for (int i = 0; i < n; i++) {
+                           int value;
+                           System.out.print("enter the " + (i + 1) + " element: ");
+                           value = input.nextInt();
+                           Array[i] = value;
+                       }
+                       System.out.print("Enter the element U want to search : ");
+                       int element = input.nextInt();
+                       int index = search(Array, element, n);
+                       if (index == -1) {
+                           System.out.print("not found");
+                       } else {
+                           System.out.println("your element at index : " + index);
+                       }
+               
+                   }
+               
+               }
+                         </pre>
+
+        </div>
+    </div>
+    <!-- c++ -->
+    <div id="c_search_model" class=" full-screen sequential ">
+        <span class="exit"><i id="c_search_exit" class="fas fa-times-circle"></i></span>
+        <div class="size">
+            <h3>c++</h3>
+            <pre> #include &lt;bits/stdc++.h&gt; 
+                using namespace std;
+                int search(int arr[],int element,int size)
+                {
+                    for(int i=0; i< size; i++) {
+                        if(arr[i]==element){return (i+1);}
+                    }
+                    return -1;
+                }
+                int main()
+                {
+                    int n;
+                    cout <<"size of list = ";
+                    cin>>n;
+                    int arr[n];
+                    for(int i=0; i< n; i++){
+                        cout<<"enter the "<< i+1<<" element: ";
+                        cin>>arr[i]; }
+                    cout<<"Enter the element U want to search : ";
+                    int element;
+                    cin>>element;
+                    int index = search(arr, element, n );
+                    if(index==-1){ cout<<"not found"<< endl;
+                       } else {
+                        cout<<"your element at index : " << index<< endl;}
+                    return 0;
+                }
+                 </pre>
+
+        </div>
+    </div>
+    <!-- description -->
+    <div id="search_description" class=" full-screen sequential  ">
+        <span class="exit"><i id="search_description_exit" class="fas fa-times-circle"></i></span>
+        <div class="half">
+            <h3>Selection description</h3>
+            <br>
+            <img class="img-style" src="images/search.jpg" alt="quick-des">
+        </div>
+    </div>
+
+    <!-- contact -->
+    <a name="contact"></a>
+    <section class="container">
+
+
+        <h3>Contact Us</h3>
+
+        <div class="footer-sty">
+            <div class="contact_info">
+
+                <h4> Contact Info </h4>
+                <div class="contact-sty">
+                    <p>
+                        <pre><i class="far fa-envelope"></i>   email:
+    <span class="text">algo@gmail.com</span>
+                            </pre>
+                        <br>
+
+                    </p>
+
+                    <p>
+
+                        <pre> <i class="fas fa-mobile-alt"></i>   phone: 
+    <span class="text">010-020-0340 </span>                       
+                            </pre>
+                    </p>
+                </div>
+
+            </div>
+            <div class="form wow bounceInUp">
+                <form action="#" method="POST">
+                    <input id="name" type="text" name="name" placeholder="name" maxlength="15" size="15">
+                    <input id="password" type="password" name="password" placeholder="password" maxlength="15"
+                        size="15"><br><br>
+                    <div>
+                        <textarea id="message" name="comments" cols="72" rows="12">  </textarea>
+                    </div><br>
+                    <center><input id="button" type="submit" value="Send Message" class="button"></center>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="team-work">
+        <h3>Talented Team</h3>
+        <div class="team wow pulse">
+            <div class="pic1">
+                <div class="des-pic1">
+                    <div> <span class="def-text">chanyeol</span>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pic2">
+                <div class="des-pic2">
+                    <div> <span class="def-text">Park yoona</span>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pic3">
+                <div class="des-pic3">
+                    <div><span class="def-text">Park shin </span>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+            <div class="pic4">
+                <div class="des-pic4 ">
+                    <div><span class="def-text">Lee Ji-eun</span>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright © Algo 2019
+        <span class="icon">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+        </span>
+
+    </footer>
+    <form action="/action_page.php">
+    <span style="text-transform: uppercase;">hdk</span> <input type="text" name="fname"><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+      </form>
+
+    <script src="js/main.js"></script>
+    <script src="dist/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
